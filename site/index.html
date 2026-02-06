@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToolMesh — Prompts → Proof</title>
+    <meta
+      name="description"
+      content="ToolMesh is an agent-native AI engineering lab. We build glue and proof-carrying pipelines around existing models so teams can ship enterprise-grade agent workflows."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="topbar-inner">
+          <a class="brand" href="#top" aria-label="ToolMesh home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M7 7L12 12L17 7M7 17L12 12L17 17"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  opacity="0.85"
+                />
+                <circle cx="7" cy="7" r="2" fill="currentColor" opacity="0.9" />
+                <circle cx="17" cy="7" r="2" fill="currentColor" opacity="0.55" />
+                <circle cx="7" cy="17" r="2" fill="currentColor" opacity="0.55" />
+                <circle cx="17" cy="17" r="2" fill="currentColor" opacity="0.9" />
+                <circle cx="12" cy="12" r="2" fill="#22C55E" />
+              </svg>
+            </span>
+            <span>
+              <div class="brand-name">ToolMesh</div>
+              <div class="brand-tag">agent-native AI engineering lab</div>
+            </span>
+          </a>
+
+          <nav class="nav" aria-label="Primary">
+            <a href="#principles">Principles</a>
+            <a href="#showroom">Showroom</a>
+            <a href="#sprint">Sprint</a>
+            <a href="https://github.com/Real-AI-Engineering" target="_blank" rel="noreferrer">GitHub</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="kicker">
+                <b>Prompts → Proof</b>
+                <span>SDLC primitives for AI agents, not humans</span>
+              </div>
+
+              <h1>
+                Build the <span class="accent">mesh</span><br />
+                between agents and production.
+              </h1>
+
+              <p class="subhead">
+                We don’t invent new models. We build the glue: contracts, receipts, and pipelines that make AI agents
+                reliable at enterprise quality — with replayable evidence and deterministic gates.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#sprint">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 6v12m6-6H6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Agent-to-Prod Sprint
+                </a>
+                <a class="btn" href="#showroom">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M7 7h10M7 12h10M7 17h10"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Explore showroom
+                </a>
+              </div>
+            </div>
+
+            <aside class="hero-card" aria-label="ToolMesh diagram">
+              <div class="mesh">
+                <div class="mesh-title">
+                  <h2>agent-native flow</h2>
+                  <span class="mono">contract → receipts → replay</span>
+                </div>
+
+                <svg class="mesh-svg" viewBox="0 0 520 330" role="img" aria-label="A mesh diagram of the flow">
+                  <defs>
+                    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#22C55E" stop-opacity="0.95" />
+                      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0.75" />
+                    </linearGradient>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="5" result="b" />
+                      <feMerge>
+                        <feMergeNode in="b" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <rect x="10" y="10" width="500" height="310" rx="20" fill="rgba(15,23,42,0.6)" stroke="rgba(148,163,184,0.18)" />
+
+                  <!-- Edges -->
+                  <g stroke="rgba(148,163,184,0.42)" stroke-width="2" fill="none">
+                    <path d="M110 84 C180 40, 240 40, 300 86" />
+                    <path d="M110 86 C180 140, 240 140, 300 86" />
+                    <path d="M300 86 C360 70, 420 92, 460 138" />
+                    <path d="M300 86 C350 132, 400 148, 460 138" />
+
+                    <path d="M110 245 C180 210, 240 210, 300 244" />
+                    <path d="M110 245 C180 285, 240 285, 300 244" />
+                    <path d="M300 244 C360 216, 420 214, 460 186" />
+                    <path d="M300 244 C360 264, 420 256, 460 186" />
+
+                    <path d="M110 84 C130 160, 130 170, 110 245" opacity="0.55" />
+                    <path d="M300 86 C280 160, 280 170, 300 244" opacity="0.55" />
+                    <path d="M460 138 C440 160, 440 170, 460 186" opacity="0.55" />
+                  </g>
+
+                  <!-- Nodes -->
+                  <g>
+                    <circle cx="110" cy="84" r="14" fill="url(#g)" filter="url(#glow)" />
+                    <circle cx="110" cy="245" r="14" fill="url(#g)" filter="url(#glow)" />
+                    <circle cx="300" cy="86" r="16" fill="#22C55E" filter="url(#glow)" />
+                    <circle cx="300" cy="244" r="16" fill="#0EA5E9" filter="url(#glow)" />
+                    <circle cx="460" cy="138" r="14" fill="url(#g)" filter="url(#glow)" />
+                    <circle cx="460" cy="186" r="14" fill="url(#g)" filter="url(#glow)" />
+                  </g>
+
+                  <!-- Labels -->
+                  <g font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="rgba(248,250,252,0.88)">
+                    <text x="60" y="62">Contract</text>
+                    <text x="64" y="270">Tools</text>
+                    <text x="250" y="62">Receipts</text>
+                    <text x="252" y="270">Replay</text>
+                    <text x="412" y="126">CI Gate</text>
+                    <text x="410" y="212">Ship</text>
+                  </g>
+                </svg>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="principles">
+        <div class="container">
+          <h3>Principles</h3>
+          <p class="lead">
+            ToolMesh is a lab, but the output is production-grade. Our primitives are designed for agents and CI to
+            consume — humans should be able to audit, but not babysit.
+          </p>
+
+          <div class="grid-3">
+            <div class="card">
+              <div class="pill"><span class="pill-dot"></span> Glue & interop</div>
+              <h4 style="margin-top: 10px">Adapters over models</h4>
+              <p>
+                We build wrappers around existing models and runtimes. The product is the interface: stable contracts,
+                tool adapters, and repeatable workflow blocks.
+              </p>
+            </div>
+            <div class="card">
+              <div class="pill"><span class="pill-dot"></span> Proof-carrying work</div>
+              <h4 style="margin-top: 10px">Trust the receipts</h4>
+              <p>
+                Every change comes with evidence: what ran, what inputs were used, which checks passed, and how to
+                replay verification in CI. Package it as a <span class="mono">Proofpack</span> and enforce it with
+                <span class="mono">ReceiptCI</span>.
+              </p>
+            </div>
+            <div class="card">
+              <div class="pill"><span class="pill-dot"></span> Test rigs</div>
+              <h4 style="margin-top: 10px">Ship experiments</h4>
+              <p>
+                We validate ideas by building small projects through the same agent-first flow, then productize what
+                keeps working across contexts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="showroom">
+        <div class="container">
+          <h3>Showroom</h3>
+          <p class="lead">A living shelf of projects we build and run through the ToolMesh flow.</p>
+
+          <div class="projects" role="list">
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/claude-code-agents" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">claude-code-agents</div>
+                <div class="meta">templates • orchestration</div>
+              </div>
+              <p>Multi-runtime agent template system with validation and CI primitives.</p>
+            </a>
+
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/context-planning-system" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">context-planning-system</div>
+                <div class="meta">workflow • planning</div>
+              </div>
+              <p>Personal context planning system + Claude Code skills for task aggregation.</p>
+            </a>
+
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/vibe-pipeline" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">vibe-pipeline</div>
+                <div class="meta">CI • building blocks</div>
+              </div>
+              <p>Reusable pipeline components for faster, safer delivery loops.</p>
+            </a>
+
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/awesome-ai-agents" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">awesome-ai-agents</div>
+                <div class="meta">knowledge • curation</div>
+              </div>
+              <p>Curated collection of tools, frameworks, papers, and tutorials for building agents.</p>
+            </a>
+
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/cookiecutter-python-claude" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">cookiecutter-python-claude</div>
+                <div class="meta">template • python</div>
+              </div>
+              <p>Modern Cookiecutter template for Python projects with Claude Code integration.</p>
+            </a>
+
+            <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/cookiecutter-react-claude" target="_blank" rel="noreferrer">
+              <div class="row">
+                <div class="name">cookiecutter-react-claude</div>
+                <div class="meta">template • react</div>
+              </div>
+              <p>Modern React template (TypeScript + Vite/Next.js) with dev setup baked in.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sprint">
+        <div class="container">
+          <h3>Agent-to-Prod Sprint</h3>
+          <p class="lead">
+            A 2–4 week engagement to install an agent-first SDLC (contracts, receipts, quality gates) and ship the first
+            production use-case with your team.
+          </p>
+
+          <div class="grid-3" style="margin-top: 18px">
+            <div class="card">
+              <h4>Week 1: Map the system</h4>
+              <p>Choose a single wedge use-case, define constraints, and set the safety boundaries (tools, data, policy).</p>
+            </div>
+            <div class="card">
+              <h4>Week 2: Install the loop</h4>
+              <p>Contracts → execution → receipts → CI replay. Make quality checks deterministic and auditable.</p>
+            </div>
+            <div class="card">
+              <h4>Weeks 3–4: Ship + repeat</h4>
+              <p>Deliver the use-case, capture the template, and set up the “next 3 use-cases” backlog.</p>
+            </div>
+          </div>
+
+          <div class="cta-row" style="margin-top: 18px">
+            <a class="btn btn-primary" href="https://github.com/Real-AI-Engineering/toolmesh/issues/new" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M8 12h8m-8 5h5M8 7h8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6 3h12a2 2 0 0 1 2 2v14l-4-2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Start a conversation
+            </a>
+            <a class="btn" href="https://github.com/Real-AI-Engineering/toolmesh" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 3h7v7m0-7L10 14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 7v14h14v-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              View repo
+            </a>
+            <a class="btn" href="https://github.com/Real-AI-Engineering/toolmesh/blob/main/docs/angel-onepager.md" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 2v6h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 13h6M9 17h6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Read one-pager
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="mono" style="font-size: 14px">ToolMesh</div>
+            <small>Agent-native AI engineering lab. Prompts → proof.</small>
+          </div>
+          <div>
+            <small>
+              GitHub org URL currently remains
+              <span class="mono">Real-AI-Engineering</span>.
+              We’re rebranding to <span class="mono">ToolMesh</span> first, then renaming the handle.
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
