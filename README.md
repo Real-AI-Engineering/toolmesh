@@ -56,6 +56,11 @@ The idea: every agent-produced change ships with a **machine-readable contract**
 
 - One-pager for angels: [`docs/angel-onepager.md`](./docs/angel-onepager.md)
 
+## Landing
+
+- Static landing: [`site/`](./site)
+- Design system notes: [`docs/design-system.md`](./docs/design-system.md)
+
 ## Contributing
 
 If you want to collaborate, open an issue in any repository above.
