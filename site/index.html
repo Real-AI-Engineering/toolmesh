@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
 
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -166,6 +167,23 @@
                   </g>
                 </svg>
               </div>
+
+              <div class="artifact" aria-label="Example proofpack receipt">
+                <div class="artifact-head">
+                  <span class="mono">proofpack/receipt.json</span>
+                  <span class="badge badge-ok" aria-label="All checks passed">PASS</span>
+                </div>
+                <pre class="artifact-pre"><code>{
+  "contract": "v1",
+  "tools": ["github", "slack"],
+  "checks": { "eval": "pass", "policy": "pass", "tests": "pass" },
+  "replay": "ci://toolmesh/runs/8471"
+}</code></pre>
+                <div class="artifact-foot">
+                  <span>share-safe by default</span>
+                  <span class="mono">receiptci verify --replay</span>
+                </div>
+              </div>
             </aside>
           </div>
         </div>
@@ -214,6 +232,7 @@
           <h3>Showroom</h3>
           <p class="lead">A living shelf of projects we build and run through the ToolMesh flow.</p>
 
+          <h4 class="subsection">Built (repos)</h4>
           <div class="projects" role="list">
             <a class="project" role="listitem" href="https://github.com/Real-AI-Engineering/claude-code-agents" target="_blank" rel="noreferrer">
               <div class="row">
@@ -261,6 +280,66 @@
                 <div class="meta">template • react</div>
               </div>
               <p>Modern React template (TypeScript + Vite/Next.js) with dev setup baked in.</p>
+            </a>
+          </div>
+
+          <h4 class="subsection">Next (concepts)</h4>
+          <p class="lead lead-small">What we’re shaping under the ToolMesh umbrella.</p>
+          <div class="projects" role="list">
+            <a
+              class="project concept"
+              role="listitem"
+              href="https://github.com/Real-AI-Engineering/toolmesh/blob/main/docs/angel-onepager.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="row">
+                <div class="name">ReceiptCI / Proofpack</div>
+                <div class="meta">flagship • proof-carrying CI</div>
+              </div>
+              <p>Contracts + receipts + replay as enforceable quality gates for agent-produced work.</p>
+            </a>
+
+            <a
+              class="project concept"
+              role="listitem"
+              href="https://github.com/Real-AI-Engineering/toolmesh/blob/main/docs/concepts/agentreplay.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="row">
+                <div class="name">AgentReplay</div>
+                <div class="meta">distribution • replays</div>
+              </div>
+              <p>One-command, sanitized run sharing across frameworks — “fork this run” as a growth loop.</p>
+            </a>
+
+            <a
+              class="project concept"
+              role="listitem"
+              href="https://github.com/Real-AI-Engineering/toolmesh/blob/main/docs/concepts/skillhub.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="row">
+                <div class="name">SkillHub</div>
+                <div class="meta">interop • verified bundles</div>
+              </div>
+              <p>Verified skill bundles with compatibility matrix and “works on my agent” guarantees.</p>
+            </a>
+
+            <a
+              class="project concept"
+              role="listitem"
+              href="https://github.com/Real-AI-Engineering/toolmesh/blob/main/docs/concepts/a2a-handoff-standard.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="row">
+                <div class="name">A2A Handoff Standard</div>
+                <div class="meta">standard • portable artifacts</div>
+              </div>
+              <p>A portable handoff artifact spec so agents can pass work across tools and vendors.</p>
             </a>
           </div>
         </div>

@@ -8,7 +8,7 @@ The direction is intentionally **agent-native** (machine-readable, proof-carryin
 
 - **Base:** Dark Mode (OLED-ish) + subtle depth
 - **Layout:** Bento/grid cards + clear hierarchy
-- **Motifs:** mesh/grid background, “evidence/receipts” artifacts, monospace highlights
+- **Motifs:** mesh/grid background, subtle aurora “signal” in the hero, “evidence/receipts” artifacts, monospace highlights
 
 ## Tokens (CSS variables)
 

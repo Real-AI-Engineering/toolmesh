@@ -53,6 +53,10 @@ Teams shipping agent workflows inside real systems:
 1) **Agent-to-Prod Sprint (2–4 weeks)** — paid engagement to ship the first production use-case and install the loop.
 2) **Product subscription** — ReceiptCI/Proofpack hosted or self-hosted with enterprise controls (policy, audit, redaction, SSO).
 
+## Optional distribution wedge (community): AgentReplay
+
+Turn receipts into distribution: a replay-first platform where teams share **sanitized** agent runs, fork them across frameworks, and benchmark on challenges. It creates a growth loop (“fork this run”) and a real-world eval dataset — reinforcing ReceiptCI/Proofpack.
+
 ## Why now
 
 - LLM costs dropped; adoption moved from pilots to “ship it”
